@@ -87,7 +87,7 @@ setMethod("correctBins", signature=c(object="QDNAseqReadCounts"),
             corrected[, s] <- corrected[, s] - min(corrected[, s], na.rm=TRUE)
         }
     } else {
-        corrected <- counts / fit
+        corrected <- counts / fit * counts
         corrected[fit <= 0] <- 0
     }
     if (anyNA(corrected[binsToUse(object), ])) {

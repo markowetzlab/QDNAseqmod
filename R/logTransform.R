@@ -75,9 +75,9 @@ sqrtoffset <- function(offset=0) {
 sqrtadhoc <- function(x, factor=sqrtfactor(), offset=sqrtoffset(), inv=FALSE) {
     if (!inv) {
         x <- x + offset
-        sqrt(x * factor)
+        2*sqrt(x + factor)
     } else {
-        x <- x^2 * (factor^-1)
+        x <- (x/2)^2 - (factor)
         x - offset
     }
 }
