@@ -1,10 +1,15 @@
 ### Using the modified pipeline
 Typical workflow:
  readCountsFiltered<-applyFilters(readCounts,residual=TRUE,blacklist=TRUE)
+ 
  readCountsFiltered <- estimateCorrection(readCountsFiltered)
+ 
  copyNumbers <- correctBins(readCountsFiltered)
+ 
  assayDataElement(copyNumbers,"copynumber")<-sweep(assayDataElement(copyNumbers,"copynumber"),2,apply(assayDataElement(readCountsFiltered,"fit"),2, median,na.rm=T),FUN='*')
+ 
  copyNumbersSmooth <- smoothOutlierBins(copyNumbers)
+ 
  copyNumbersSegmented <- segmentBins(copyNumbersSmooth,transformFun="sqrt")
 
 ### QDNAseq: Quantitative DNA sequencing for chromosomal aberrations
