@@ -1,7 +1,7 @@
 Package: QDNAseqmod
 Version: 1.21.0
 Date: 2017-04-14
-Title: Quantitative DNA sequencing for chromosomal aberrations
+Title: Modified Quantitative DNA sequencing for chromosomal aberrations
 Author: Ilari Scheinin [aut], Daoud Sie [aut, cre], Henrik Bengtsson [aut]
 Maintainer: Daoud Sie <d.sie@vumc.nl>
 Depends: R (>= 3.1.0)
@@ -12,7 +12,7 @@ Imports: graphics, methods, stats, utils,
         BiocParallel (>= 1.6.6),
 Suggests: BiocStyle (>= 1.8.0), BSgenome (>= 1.38.0), digest (>= 0.6.8),
         GenomeInfoDb (>= 1.6.0), future (>= 0.14.0), R.cache (>= 0.12.0)
-Description: Quantitative DNA sequencing for chromosomal aberrations.
+Description: MODIFIED - Quantitative DNA sequencing for chromosomal aberrations.
         The genome is divided into non-overlapping fixed-sized bins, number of
         sequence reads in each counted, adjusted with a simultaneous
         two-dimensional loess correction for sequence mappability and GC
@@ -22,5 +22,5 @@ Description: Quantitative DNA sequencing for chromosomal aberrations.
 biocViews: CopyNumberVariation, DNASeq, Genetics, GenomeAnnotation,
         Preprocessing, QualityControl, Sequencing
 License: GPL
-URL: https://github.com/ccagc/QDNAseq
-BugReports: https://github.com/ccagc/QDNAseq/issues
+URL: https://github.com/markowetzlab/QDNAseqmod
+BugReports: https://github.com/markowetzlab/QDNAseqmod/issues

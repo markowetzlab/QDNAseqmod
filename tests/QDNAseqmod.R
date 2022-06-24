@@ -1,4 +1,4 @@
-library("QDNAseq")
+library("QDNAseqmod")
 
 # Load data
 data(LGG150)
