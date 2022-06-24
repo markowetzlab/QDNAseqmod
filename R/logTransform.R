@@ -1,7 +1,7 @@
 log2offset <- function(offset=.Machine$double.xmin) {
     # Get offset?
     if (missing(offset)) {
-        offset <- getOption("QDNAseq::log2offset", .Machine$double.xmin)
+        offset <- getOption("QDNAseqmod::log2offset", .Machine$double.xmin)
         offset <- as.double(offset);
         stopifnot(is.finite(offset));
         return(offset);
@@ -14,7 +14,7 @@ log2offset <- function(offset=.Machine$double.xmin) {
     stopifnot(length(offset) == 1L);
     offset <- as.double(offset);
     stopifnot(is.finite(offset));
-    options("QDNAseq::log2offset"=offset);
+    options("QDNAseqmod::log2offset"=offset);
 
     offset;
 }
@@ -33,7 +33,7 @@ log2adhoc <- function(x, offset=log2offset(), inv=FALSE) {
 sqrtfactor <- function(factor=3/8) {
     # Get factor?
     if (missing(factor)) {
-        factor <- getOption("QDNAseq::sqrtfactor", 3/8)
+        factor <- getOption("QDNAseqmod::sqrtfactor", 3/8)
         factor <- as.double(factor);
         stopifnot(is.finite(factor));
         return(factor);
@@ -46,7 +46,7 @@ sqrtfactor <- function(factor=3/8) {
     stopifnot(length(factor) == 1L);
     factor <- as.double(factor);
     stopifnot(is.finite(factor));
-    options("QDNAseq::sqrtfactor"=factor);
+    options("QDNAseqmod::sqrtfactor"=factor);
 
     factor;
 }
@@ -54,7 +54,7 @@ sqrtfactor <- function(factor=3/8) {
 sqrtoffset <- function(offset=0) {
     # Get offset?
     if (missing(offset)) {
-        offset <- getOption("QDNAseq::sqrtoffset", 0)
+        offset <- getOption("QDNAseqmod::sqrtoffset", 0)
         offset <- as.double(offset);
         stopifnot(is.finite(offset));
         return(offset);
@@ -67,7 +67,7 @@ sqrtoffset <- function(offset=0) {
     stopifnot(length(offset) == 1L);
     offset <- as.double(offset);
     stopifnot(is.finite(offset));
-    options("QDNAseq::sqrtoffset"=offset);
+    options("QDNAseqmod::sqrtoffset"=offset);
 
     offset;
 }

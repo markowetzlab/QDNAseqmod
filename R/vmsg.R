@@ -1,5 +1,5 @@
 vmsg <- function(...) {
-    verbose <- getOption("QDNAseq::verbose", TRUE)
+    verbose <- getOption("QDNAseqmod::verbose", TRUE)
     if (is.na(verbose)) {
         args <- list(...)
         appendLF <- TRUE

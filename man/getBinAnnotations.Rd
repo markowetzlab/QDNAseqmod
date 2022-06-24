@@ -14,7 +14,7 @@
 
 \usage{
 getBinAnnotations(binSize, genome="hg19", type="SR50",
-  path=getOption("QDNAseq::binAnnotationPath", NULL))
+  path=getOption("QDNAseqmod::binAnnotationPath", NULL))
 }
 
 \description{
@@ -32,7 +32,7 @@ getBinAnnotations(binSize, genome="hg19", type="SR50",
     \item{path}{A \code{\link[base]{character}} string specifying the path for the bin
         annotation files. Defaults to downloading from the Internet, but can
         also be a local path. Can also be defined by setting the
-        \code{QDNAseq::binAnnotationPath} option.}
+        \code{QDNAseqmod::binAnnotationPath} option.}
 }
 
 \details{

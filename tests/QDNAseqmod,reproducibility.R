@@ -2,7 +2,7 @@
 # This scripts asserts that for each processing step of QDNAseq
 # the output/results are reproducible (numerically equal).
 ######################################################################
-library("QDNAseq")
+library("QDNAseqmod")
 
 # Load data
 data(LGG150)

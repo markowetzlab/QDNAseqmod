@@ -94,7 +94,7 @@
 #*/#########################################################################
 binReadCounts <- function(bins, bamfiles=NULL, path=NULL, ext='bam',
     bamnames=NULL, phenofile=NULL, chunkSize=NULL,
-    cache=getOption("QDNAseq::cache", FALSE), force=!cache,
+    cache=getOption("QDNAseqmod::cache", FALSE), force=!cache,
     isPaired=NA, isProperPair=NA,
     isUnmappedQuery=FALSE, hasUnmappedMate=NA,
     isMinusStrand=NA, isMateMinusStrand=NA,
