@@ -1,8 +1,8 @@
 #########################################################################/**
-# @RdocPackage QDNAseq
+# @RdocPackage QDNAseqmod
 #
 # \description{
-#     @eval "packageDescription('QDNAseq')$Description"
+#     @eval "packageDescription('QDNAseqmod')$Description"
 # }
 #
 # \section{Details}{

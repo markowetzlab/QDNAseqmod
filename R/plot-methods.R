@@ -33,15 +33,15 @@
 setMethod("plot", signature(x="QDNAseqSignals", y="missing"),
     function (x, y, main=NULL, includeReadCounts=TRUE,
     logTransform=TRUE, scale=TRUE, sdFUN="sdDiffTrim",
-    delcol=getOption("QDNAseq::delcol", "darkred"),
-    losscol=getOption("QDNAseq::losscol", "red"),
-    gaincol=getOption("QDNAseq::gaincol", "blue"),
-    ampcol=getOption("QDNAseq::ampcol", "darkblue"),
-    pointcol=getOption("QDNAseq::pointcol", "black"),
-    segcol=getOption("QDNAseq::segcol", "chocolate"),
-    misscol=getOption("QDNAseq::misscol", NA),
-    pointpch=getOption("QDNAseq::pointpch", 1L),
-    pointcex=getOption("QDNAseq::pointcex", 0.1),
+    delcol=getOption("QDNAseqmod::delcol", "darkred"),
+    losscol=getOption("QDNAseqmod::losscol", "red"),
+    gaincol=getOption("QDNAseqmod::gaincol", "blue"),
+    ampcol=getOption("QDNAseqmod::ampcol", "darkblue"),
+    pointcol=getOption("QDNAseqmod::pointcol", "black"),
+    segcol=getOption("QDNAseqmod::segcol", "chocolate"),
+    misscol=getOption("QDNAseqmod::misscol", NA),
+    pointpch=getOption("QDNAseqmod::pointpch", 1L),
+    pointcex=getOption("QDNAseqmod::pointcex", 0.1),
     xlab=NULL, ylab=NULL, ylim=NULL, xaxt="s", yaxp=NULL,
     showDataPoints=TRUE, showSD=TRUE, doSegments=TRUE, doCalls=TRUE, ... ) {
 
@@ -285,8 +285,8 @@ setMethod("plot", signature(x="QDNAseqSignals", y="missing"),
         }
         vmsg()
     }
-    options("QDNAseq::plotLogTransform"=logTransform)
-    options("QDNAseq::plotScale"=scale)
+    options("QDNAseqmod::plotLogTransform"=logTransform)
+    options("QDNAseqmod::plotScale"=scale)
 })
 
 
@@ -331,11 +331,11 @@ setMethod("plot", signature(x="QDNAseqSignals", y="missing"),
 #*/#########################################################################
 setMethod("frequencyPlot", signature=c(x="QDNAseqCopyNumbers", y="missing"),
     function(x, y, main="Frequency Plot",
-    delcol=getOption("QDNAseq::delcol", "darkred"),
-    losscol=getOption("QDNAseq::losscol", "red"),
-    gaincol=getOption("QDNAseq::gaincol", "blue"),
-    ampcol=getOption("QDNAseq::ampcol", "darkblue"),
-    misscol=getOption("QDNAseq::misscol", NA),
+    delcol=getOption("QDNAseqmod::delcol", "darkred"),
+    losscol=getOption("QDNAseqmod::losscol", "red"),
+    gaincol=getOption("QDNAseqmod::gaincol", "blue"),
+    ampcol=getOption("QDNAseqmod::ampcol", "darkblue"),
+    misscol=getOption("QDNAseqmod::misscol", NA),
     xlab=NULL, ... ) {
 
     ## Import private functions

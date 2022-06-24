@@ -174,7 +174,7 @@ exportVCF <- function(obj) {
     
     vcfHeader <- cbind(c(
 			 '##fileformat=VCFv4.2',
-			 paste('##source=QDNAseq-', packageVersion("QDNAseq"), sep=""),
+			 paste('##source=QDNAseq-', packageVersion("QDNAseqmod"), sep=""),
 			 '##REF=<ID=DIP,Description="CNV call">',
 			 '##ALT=<ID=DEL,Description="Deletion">',
 			 '##ALT=<ID=DUP,Description="Duplication">',

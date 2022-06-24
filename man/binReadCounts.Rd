@@ -14,7 +14,7 @@
 
 \usage{
 binReadCounts(bins, bamfiles=NULL, path=NULL, ext="bam", bamnames=NULL, phenofile=NULL,
-  chunkSize=NULL, cache=getOption("QDNAseq::cache", FALSE), force=!cache, isPaired=NA,
+  chunkSize=NULL, cache=getOption("QDNAseqmod::cache", FALSE), force=!cache, isPaired=NA,
   isProperPair=NA, isUnmappedQuery=FALSE, hasUnmappedMate=NA, isMinusStrand=NA,
   isMateMinusStrand=NA, isFirstMateRead=NA, isSecondMateRead=NA, isSecondaryAlignment=NA,
   isNotPassingQualityControls=FALSE, isDuplicate=FALSE, minMapq=37, pairedEnds=NULL)
@@ -41,7 +41,7 @@ binReadCounts(bins, bamfiles=NULL, path=NULL, ext="bam", bamnames=NULL, phenofil
     \item{cache}{Whether to read and write intermediate cache files, which
         speeds up subsequent analyses of the same files. Requires packages
         R.cache and digest (both available on CRAN) to be installed. Defaults
-        to getOption("QDNAseq::cache", FALSE).}
+        to getOption("QDNAseqmod::cache", FALSE).}
     \item{force}{When using the cache, whether to force reading input data
         from the BAM files even when an intermediate cache file is present.}
     \item{isPaired}{A logical(1) indicating whether unpaired (FALSE), paired

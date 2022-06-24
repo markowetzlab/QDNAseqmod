@@ -6,16 +6,16 @@
 % by the Rdoc compiler part of the R.oo package.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\name{QDNAseq-package}
-\alias{QDNAseq-package}
-\alias{QDNAseq}
+\name{QDNAseqmod-package}
+\alias{QDNAseqmod-package}
+\alias{QDNAseqmod}
 \docType{package}
 
-\title{Package QDNAseq}
+\title{Package QDNAseqmod}
 
 
 \description{
-    Quantitative DNA sequencing for chromosomal aberrations.
+    MODIFIED - Quantitative DNA sequencing for chromosomal aberrations.
         The genome is divided into non-overlapping fixed-sized bins, number of
         sequence reads in each counted, adjusted with a simultaneous
         two-dimensional loess correction for sequence mappability and GC
@@ -25,7 +25,7 @@
 }
 
 \section{Details}{
-    A package to detect chromosomal aberrations from whole-genome sequencing
+    A modified package to detect chromosomal aberrations from whole-genome sequencing
     data. \code{\link{QDNAseqReadCounts}} and \code{\link{QDNAseqCopyNumbers}} classes are
     used as the main data structures.
 }

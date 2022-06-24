@@ -121,7 +121,7 @@ setMethod("highlightFilters", signature=c(object="QDNAseqSignals"),
     all.chrom <- chromosomes(object)
     chrom <- all.chrom[condition]
     uni.chrom <- unique(chrom)
-    if (!getOption("QDNAseq::plotScale")) {
+    if (!getOption("QDNAseqmod::plotScale")) {
         index <- 1:nrow(object)
         indexPos <- rep(NA_integer_, times=nrow(object))
         indexPos[binsToUse(object)] <- 1:sum(binsToUse(object))
@@ -150,7 +150,7 @@ setMethod("highlightFilters", signature=c(object="QDNAseqSignals"),
         copynumber <- assayDataElement(object, "copynumber")[condition, ,
             drop=FALSE]
     }
-    if (getOption("QDNAseq::plotLogTransform"))
+    if (getOption("QDNAseqmod::plotLogTransform"))
         copynumber <- log2adhoc(copynumber)
     if (ncol(object) > 1L)
         vmsg("Multiple samples present in input, only using first sample: ",

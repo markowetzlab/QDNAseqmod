@@ -24,3 +24,4 @@ biocViews: CopyNumberVariation, DNASeq, Genetics, GenomeAnnotation,
 License: GPL
 URL: https://github.com/markowetzlab/QDNAseqmod
 BugReports: https://github.com/markowetzlab/QDNAseqmod/issues
+RoxygenNote: 7.2.0

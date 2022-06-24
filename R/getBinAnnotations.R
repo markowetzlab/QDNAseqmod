@@ -46,7 +46,7 @@
 # @keyword IO
 #*/#########################################################################
 getBinAnnotations <- function(binSize, genome='hg19', type='SR50',
-    path=getOption("QDNAseq::binAnnotationPath", NULL)) {
+    path=getOption("QDNAseqmod::binAnnotationPath", NULL)) {
 
     bins <- NULL
 
